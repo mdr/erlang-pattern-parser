@@ -1,0 +1,14 @@
+ * Bindings class
+ * Record parser
+ 
+    
+   val handler = new IPatternMatcher[String]() {
+     
+     @Pattern("{foo}")
+     def matched() = "I found foo!"
+     
+     @Pattern("[X, Y, Z]")
+     def matched(X: OtpErlangPid, Y: Int, Z: String) = "Triple list found " + Z
+     
+   }
+   

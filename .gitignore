@@ -1,0 +1,6 @@
+.history
+.cache
+.settings
+bin/
+target/
+.manager
